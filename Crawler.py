@@ -19,3 +19,9 @@ class PcStoreCrawler():
         for i in item:
             titleArray.append(i.get_text())
         return titleArray
+
+
+print("This is example")
+inputText = input("請輸入關鍵字: ")
+crawlerOne = PcStoreCrawler()
+print(crawlerOne.fetchIt(inputText))
